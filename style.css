@@ -1,0 +1,90 @@
+:root {
+    --main-color: #007bff
+}
+
+/* vh: viewport height - changes size items based on size of screen*/
+
+#todo-container{
+    border: 2px solid var(--main-color);
+    border-radius:10px;
+    padding:1em;
+    background-color:whitesmoke;
+    box-shadow:0 0 1em rgb(0, 0, 0,0.5);
+    display:flex;
+    flex-direction:column;
+    align-items:center; /* align vertically */
+    justify-content:center; /*align horizontally */
+}
+
+body {
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center; /* align vertically */
+    justify-content:center; /*align horizontally */
+    font-size:clamp(10px,3vh, 20px);/* clamp(min, acutal, max) */
+    
+    /* float:right flexbox: make something to the right*/
+}
+
+h1{
+    color: var(--main-color);
+}
+button{
+    border-radius:20%; /* make buttons into circle */
+    padding:0.5em;
+    background-color:var(--main-color);
+    color:white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:darkblue;
+}
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+
+
+#todolist{
+    width:200px;
+
+}
+
+.check{
+    text-decoration:line-through;
+    color:lightgray;
+}
+
+#todolist div p{
+    transition:0.3s ease;
+    color:red;
+    background-color:lightgray;
+    border-radius:10px;
+    padding:0.5em;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#todolist div p:hover{
+    background-color:whitesmoke;
+
+}
+
+input{
+    border-radius:5px;
+    border-color:gray;
+    border-width:1px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+div{
+    margin-bottom:0.5em;
+}
